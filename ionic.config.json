@@ -1,0 +1,7 @@
+{
+  "name": "wefly",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

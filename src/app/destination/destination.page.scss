@@ -1,0 +1,45 @@
+ion-title.title-large {
+    font-size: 20px;
+  }
+
+  .card-background-flight {
+    background-image: url('../../assets/images/flight.png');
+    background-size: cover;
+    background-position: center;
+    height: 90px;
+  }
+
+  .card-background-lodging {
+    background-image: url('../../assets/images/lodging.png');
+    background-size: cover;
+    background-position: center;
+    height: 90px;
+  }
+
+  .card-background-login {
+    background-image: url('../../assets/images/rectangle1.png');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+  }
+
+
+  .card-background-background {
+    background-image: url('../../assets/images/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
+
+  ion-slides {
+    height: 100%;
+  }
+
+  ion-slides {
+    height: 50%;
+  }
+  
+  ion-slide ion-img {
+    height: 100%;
+    width: 100%;
+  }
