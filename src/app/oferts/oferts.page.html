@@ -1,24 +1,74 @@
-
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-title> Ionic Swiper </ion-title>
-    <ion-buttons slot="end">
-      <ion-button (click)="goPrev()">
-        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
-      </ion-button>
-      <ion-button (click)="goNext()">
-        <ion-icon slot="icon-only" name="arrow-forward"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+  <ion-toolbar>
+    <ion-title> Ofertas</ion-title>
   </ion-toolbar>
 </ion-header>
- 
+
 <ion-content>
-  <swiper-container [slidesPerView]="1.5" [loop]="true" [pagination]="true">
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide ...</swiper-slide>
-  </swiper-container>
-  
+
+  <div style="text-align: center; margin: 15px;">
+    <img style="margin-left:45px" src="../../assets/images/wefly-icon.png" alt="">
+  </div>
+
+  <div style="margin: 5px; margin-bottom: 0px;">
+    <p size="large" style="color: white; font-weight: 700; margin-left: 25px; margin-bottom: 0px;">Encuentra</p>
+  </div>
+
+  <div style="margin: 0px 5px 5px 5px;">
+    <ion-grid>
+      <ion-row style="text-align: center;">
+        <ion-col size="12">
+          <img src="../../assets/images/flight-option.png" alt="">
+        </ion-col>
+      </ion-row>
+      <ion-row style="text-align: center;  width: 90%; margin-left: 20px;">
+        <ion-col style="border: 1px solid; border-color: #4A54D6; border-radius: 5px;" size="6">
+          <img style="margin-top: 10px;" src="../../assets/images/hostage-option.png" alt="">
+          <p style="color: white; font-weight: 700; font-size: 19px;">Hospedajes</p>
+        </ion-col>
+        <ion-col style="border: 1px solid; border-color: #4A54D6; border-radius: 5px;" size="6">
+          <img style="margin-top: 10px;" src="../../assets/images/package-option.png" alt="">
+          <p style="color: white; font-weight: 700; font-size: 19px;">Paquetes</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div style="margin: 5px; margin-bottom: 0px;">
+    <p size="large" style="font-size: 13px; color: white; font-weight: 700; margin-left: 25px; margin-bottom: 0px;">
+      Destinos populares
+    </p>
+  </div>
+
+  <div style="margin: 25px 25px 0px 25px">
+    <swiper-container style="height: 230px;" [slidesPerView]="1.2" [loop]="true" [pagination]="true">
+      <swiper-slide>
+        <img src="../../assets/images/destinos_populares.png" alt="">
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../../assets/images/destinos_populares.png" alt="">
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../../assets/images/destinos_populares.png" alt="">
+      </swiper-slide>
+    </swiper-container>
+  </div>
+
+  <div style=" margin-bottom: 0px;">
+    <p size="large" style="font-size: 13px; color: white; font-weight: 700; margin-left: 25px; margin-bottom: 0px;">
+      ¿Ya estas preparado?
+    </p>
+  </div>
+
+  <div style="margin: 0px 5px 5px 5px; text-align: center;">
+    <img style="margin: 5px;" src="../../assets/images/banner-miami.png" alt="">
+  </div>
+
+  <div style=" margin-bottom: 0px;">
+    <p size="large" style="font-size: 13px; color: white; font-weight: 700; margin-left: 25px; margin-bottom: 0px;">
+      Para ti WeTraveler
+    </p>
+  </div>
+
+
 </ion-content>

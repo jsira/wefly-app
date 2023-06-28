@@ -1,6 +1,6 @@
 swiper-container {
   width: 100%;
-  height: 100%;
+  height: 165px;
 
   --swiper-pagination-bullet-inactive-color: var(--ion-color-step-200, #cccccc);
   --swiper-pagination-color: var(--ion-color-primary, #3880ff);
@@ -11,4 +11,9 @@ swiper-slide {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 140px;
+}
+
+.slide-content1{
+  background: #3880ff;
 }
