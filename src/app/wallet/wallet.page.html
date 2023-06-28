@@ -6,12 +6,82 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Wallet</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Wallet"></app-explore-container>
+<ion-content [fullscreen]="true">
+
+  <div style="margin-left: 25px; margin-right: 25px;">
+    <ion-grid>
+      <ion-row>
+        <ion-col style="color: #4A54D6; font-weight: 600;">Atrás</ion-col>
+        <ion-col style="text-align: end;">
+          <img style="margin: 5px; margin-bottom: 0px;" src="../../assets/images/wepng.png" alt="">
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <img  src="../../assets/images/line.png" alt="">
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  
+  <!-- <ion-item-divider>
+  </ion-item-divider> -->
+
+
+  <div style="margin: 20px; margin-top: 5px;">
+    <ion-segment value="default">
+      <ion-segment-button style="color: #FFFFFF;" value="default">
+        <ion-label>Ida</ion-label>
+      </ion-segment-button>
+      <ion-segment-button  style="color: #FFFFFF;" value="return">
+        <ion-label >Ida y vuelta</ion-label>
+      </ion-segment-button>
+      <ion-segment-button style="color: #FFFFFF;" value="multi">
+        <ion-label >Multidestino</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div style="margin-left: 25px; margin-right: 25px;">
+    <h1>Detalles del vuelo</h1>
+  </div>
+
+  <div div style="margin-left: 5px; margin-right: 25px; text-align: center;">
+    <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-input placeholder="Desde Caracas"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-input placeholder="Cualquier destino"></ion-input>
+    </ion-item>
+
+    <div style="margin: 20px; margin-top: 15px;">
+      <ion-segment value="none">
+        <ion-segment-button style="color: #FFFFFF;" value="default">
+          <ion-label><ion-icon name="person" slot="start" style="color: #FFFFFF;margin-right: 5px;"></ion-icon> 1 Viajero</ion-label>
+        </ion-segment-button>
+        <ion-segment-button  style="color: #FFFFFF;" value="return">
+          <ion-label >Adulto</ion-label>
+        </ion-segment-button>
+        <ion-segment-button style="color: #FFFFFF;" value="multi">
+          <ion-label >Niños</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+
+    <ion-item>
+      <ion-icon name="calendar" slot="start"></ion-icon>
+      <ion-input placeholder="Cualquer feccha"></ion-input>
+    </ion-item>
+
+  </div>
+
+  <div style="margin: 20px;">
+    <ion-button expand="block" style="height: 33px; border-radius: 5px; font-weight: 400;">Empezar a Viajar</ion-button> 
+  </div>
+
+
+  
 </ion-content>
