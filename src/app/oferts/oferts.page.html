@@ -17,7 +17,7 @@
   <div style="margin: 0px 5px 5px 5px;">
     <ion-grid>
       <ion-row style="text-align: center;">
-        <ion-col size="12">
+        <ion-col size="12" (click)="goToFlight()">
           <img src="../../assets/images/flight-option.png" alt="">
         </ion-col>
       </ion-row>
@@ -41,7 +41,7 @@
   </div>
 
   <div style="margin: 25px 25px 0px 25px">
-    <swiper-container style="height: 230px;" [slidesPerView]="1.2" [loop]="true" [pagination]="true">
+    <swiper-container style="height: 150px;" [slidesPerView]="1.2" [loop]="true" [pagination]="false">
       <swiper-slide>
         <img src="../../assets/images/destinos_populares.png" alt="">
       </swiper-slide>

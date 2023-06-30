@@ -1,0 +1,24 @@
+ion-segment-button {
+  --indicator-color: #4A54D6;
+}
+
+/* Material Design styles */
+ion-segment-button.md {
+  --color: #000;
+  --color-checked: #4A54D6;
+  --indicator-height: 4px;
+  font-weight: 600;
+}
+
+/* iOS styles */
+ion-segment-button.ios {
+  --color: #4A54D6;
+  --color-checked: #fff;
+  --border-radius: 5px;
+  font-weight: 600;
+}
+
+ion-input{
+  --placeholder-color: #FFFFFF;
+  --placeholder-opacity: 1;
+}

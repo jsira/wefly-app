@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 import { Swiper } from 'swiper';
 
 
@@ -14,7 +16,7 @@ export class OfertsPage {
   swiperRef: ElementRef | undefined;
   swiper?: Swiper;
  
-  constructor() {}
+  constructor(public navCtrl: NavController, private router: Router) {}
  
   swiperSlideChanged(e: any) {
     console.log('changed: ', e);
@@ -30,6 +32,16 @@ export class OfertsPage {
  
   goPrev() {
     this.swiper?.slidePrev();
+  }
+
+  goToFlight(){
+    this.router.navigate(['/flight']);
+
+  }
+
+  goToBack(){
+    this.router.navigate(['/']);
+
   }
 
 }
